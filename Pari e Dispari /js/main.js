@@ -1,18 +1,22 @@
 'use strict';
-// const pariDispari = prompt('Scegli "Pari" o "Dispari"');
-// if(pariDispari===('Pari')){
-//     alert('Hai scelto Pari');
-// }
-//  else{
-//     alert('Hai scelto Dispari');
-// }
+const pariDispari = prompt('Scegli "Pari" o "Dispari"');
+if(pariDispari===('Pari')){
+    alert('Hai scelto Pari');
+}
+ else{
+    alert('Hai scelto Dispari');
+}
 let random = randomNum();
 console.log(random);
 
 let sumTotal = somma();
-console.log('Il numero totale è '+ sumTotal)
-
-
+console.log('Il numero totale è ' + sumTotal)
+if(sumTotal%2){
+    alert('Ha vinto Pari');
+}
+else{
+    alert('Ha vinto Dispari');
+}
 function randomNum(){
     return Math.floor((Math.random() * 5) + 1);   
 }
@@ -22,4 +26,5 @@ function somma(num1,num2){
     const sum = num1 + num2;
     return sum;
 }
+
 
