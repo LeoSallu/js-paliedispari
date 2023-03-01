@@ -6,7 +6,7 @@ console.log(userInput);
 const wordPal= wordReverse(userInput);
 console.log(wordPal);
 // If
- if (userInput===wordPal){
+ if (userInput.toLowerCase()===wordPal.toLowerCase()){
     alert('La tua parola è Palindroma');
  }
  else{
@@ -20,3 +20,4 @@ function wordReverse(word){
     }
     return reverseWord;
 }
+
