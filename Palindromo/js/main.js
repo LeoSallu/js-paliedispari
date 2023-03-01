@@ -5,12 +5,13 @@ console.log(userInput);
 // Console Word Palindroma
 const wordPal= wordReverse(userInput);
 console.log(wordPal);
-
-
-
-
-
-
+// If
+ if (userInput===wordPal){
+    alert('La tua parola è Palindroma');
+ }
+ else{
+    alert('La tua parola non è Palindroma');
+ };
 // FUNZIONE PAROLA ROVESCIATA 
 function wordReverse(word){
     let reverseWord = '';
